@@ -24,6 +24,7 @@ my %configure_requires = (
 	'File::Spec::Functions' => 0,
 );
 
+my $url_resources = 'http://github.com/potyl/perl-SOAP-Transport-HTTP-Log4perl';
 my $build = Module::Build->new(
 	module_name       => 'SOAP::Transport::HTTP::Log4perl',
 	license           => 'perl',
@@ -41,9 +42,9 @@ my $build = Module::Build->new(
 
 	meta_merge => {
 		resources => {
-			homepage   => 'http://github.com/potyl/pexeso',
-			bugtracker => 'http://github.com/potyl/pexeso/issues',
-			repository => 'http://github.com/potyl/pexeso',
+			homepage   => $url_resources,
+			bugtracker => "$url_resources/issues",
+			repository => $url_resources,
 		},
 	},
 );
